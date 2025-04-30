@@ -21,7 +21,7 @@ const store = useItemsStore()
         } else {
           item.checked = !item.checked
         }
-        // store.checkedUserItems.push(item)
+        //store.checkedUserItems.push(item)
       } else {
         if (!store.checkedStoreItem) {
           store.checkedStoreItem = item
