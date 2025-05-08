@@ -73,11 +73,11 @@ const storeItems = [
 export const useItemsStore = defineStore('items', () => {
     //const checkableChooseableItems = ref([{...chooseableItems, "checked": false}])
     //const checkableUserItems = ref([{...userItems, "checked": false}])
-    const checkableStoreItems = ref(storeItems.map(item => ({ ...item, checked: false })))
-    const checkableUserItems = ref(userItems.map(item => ({ ...item, checked: false })))
-    const checkedUserItems = ref([])
-    let maxLength = 6
+    const checkableStoreItems = ref(storeItems.map(item => ({ ...item, 'checked': false })))
+    const checkableUserItems = ref(userItems.map(item => ({ ...item, 'checked': false })))
+    //const checkedUserItems = ref([])
+    let maxCheckedUserItemsLength = 6
     const checkedStoreItem = ref()
 
-    return { checkableStoreItems, checkableUserItems, checkedUserItems, maxLength, checkedStoreItem }
+    return { checkableStoreItems, checkableUserItems, maxCheckedUserItemsLength, checkedStoreItem }
 })
